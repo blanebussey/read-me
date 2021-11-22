@@ -15,13 +15,19 @@ const questions = [
     {
     type: "input",
     name: "packages",
-    message: "What packages will you use in the project?"}
+    message: "What packages will you use in the project?"
+},
+    {
+    type: "input",
+    name: "email",
+    message: "What is your e-mail address?"
+    }
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {   
-    fs.appendFile(fileName, data, err => {
+    fs.writeFile(fileName, data, err => {
    err ? console.error(err) : console.log('success')})  
 }
 
