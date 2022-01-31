@@ -2,7 +2,6 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const inquire = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
@@ -21,7 +20,14 @@ const questions = [
     type: "input",
     name: "email",
     message: "What is your e-mail address?"
-    }
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "What is the license for this project?",
+        choices: ["Apache", "GNU", "MIT"]
+        }
+
 
 ];
 
@@ -42,3 +48,4 @@ function init() {
 
 // Function call to initialize app
 init();
+

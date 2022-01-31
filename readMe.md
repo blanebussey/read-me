@@ -1,5 +1,5 @@
-# read-me
+# Generate Read Me [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   ## packages 
   inquirer
   ## email address
-  inquirer
+  blanebussey@gmail.com
